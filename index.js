@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 // ✅ Variables d'environnement
 const VERIFY_TOKEN = process.env.VERIFY_TOKEN || "whatsApp";  
-const WHATSAPP_TOKEN = process.env.WHATSAPP_TOKEN;
+const WHATSAPP_TOKEN = process.env.WHATSAPP_TOKEN || "EAGWp4PDBMf4BO2GMPU9Jt308FLxqIh5qrApUrV4YC5ZCXKnFm2xC0gNTaDX3WHOoSJqlia2PLGKqUyyPriSYi7ztQxqKrBJlzr7g9EFwOBETUhyGKikqifEBGaZAG4pkh4uyn8SA2NmBpuVNO19MwfYRDd2ncFuz8N9ZA9KIlNBC0g99I3rRqORwHVq99rHfq8ZD";
 const API_AI_URL = "https://jonell01-ccprojectsapihshs.hf.space/api/gpt4";
 
 app.use(bodyParser.json());
