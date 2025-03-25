@@ -1,14 +1,13 @@
-require("dotenv").config();
 const express = require("express");
 const axios = require("axios");
 const bodyParser = require("body-parser");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
-// ✅ Variables d'environnement
-const VERIFY_TOKEN = process.env.VERIFY_TOKEN || "whatsApp";  
-const WHATSAPP_TOKEN = process.env.WHATSAPP_TOKEN || "EAGWp4PDBMf4BO2GMPU9Jt308FLxqIh5qrApUrV4YC5ZCXKnFm2xC0gNTaDX3WHOoSJqlia2PLGKqUyyPriSYi7ztQxqKrBJlzr7g9EFwOBETUhyGKikqifEBGaZAG4pkh4uyn8SA2NmBpuVNO19MwfYRDd2ncFuz8N9ZA9KIlNBC0g99I3rRqORwHVq99rHfq8ZD";
+// ✅ Variables directement dans le code
+const VERIFY_TOKEN = "whatsApp";
+const WHATSAPP_TOKEN = "EAGWp4PDBMf4BOZBZCZAbiTgO8xCd8uFoYYNF9RvbNKWu7GIm6bHi5xHabIuPInulJOGP1d1M77nfuwPZAiCbJH4WhnYMIL7TLV0kgwfGZCP350oI4bjuGGBYIftmTArOUilSkvTIPHKrJSNObKoV7n8GrhOvs0MoeAvxarucvlJXTlkFwqRmSBZAmaeiZBSxMeyFdcZD";
 const API_AI_URL = "https://jonell01-ccprojectsapihshs.hf.space/api/gpt4";
 
 app.use(bodyParser.json());
